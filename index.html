@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href= "css/index.css">
+    <link  rel="stylesheet" type="text/css" href= "css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/fondo2.js"></script>
+    </HEAD>
+    <header>                
+        <nav>
+            <div class="site-title">Videojuegos</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            <ul>
+        </nav>
+        <!--CARROUSEL-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/zelda.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/witcher.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/minecraft.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/halo.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+    </header>
+    <body>                
+        <section>
+            <div id="canva3">
+                <canvas id="fondoc2" width="100" height="100" >
+                    <script>
+                        var d = document.getElementById("fondoc2");
+                        var ctx2 = d.getContext("2d");
+                        
+                        // Create gradient
+                        var grd1 = ctx2.createLinearGradient(0, 0, 1000, 0);
+                        grd1.addColorStop(0, "#CCD0F0");
+                        grd1.addColorStop(1, "white");
+                        
+                        // Fill with gradient
+                        ctx2.fillStyle = grd1;
+                        ctx2.fillRect(0, 0, 5050, 80);
+                    </script>
+                </canvas>
+            </div>
+            <br><br><br><br><br><br>
+            <div id= "canva1">
+                <canvas id="dibujo" width="610px" height="140px" ></canvas>
+                    <script>
+                        var a = document.getElementById('dibujo');
+                        var ctx = a.getContext('2d');
+                        
+                        ctx.fillStyle = "black";
+                        ctx.font = "40px Arial";
+                        ctx.fillText("Todo sobre videojuegos actuales",5,80);            
+                    </script>
+            </div>
+            <section class="content" >
+                <article>
+                    <p>Aquí encontrarás los videojuegos más populares por los usuarios, 
+                    con toda la información y su nivel de tendencia que mide el 
+                    interés de los jugadores en los mismos.</p>                    
+                    <div >
+                        <canvas id='canvas-fondo' class="imagen-canva"></canvas>                        
+                    </div>
+                    
+    
+                    <p>Hay docenas de formas con las que podríamos construir nuestra lista de los videojuegos más famosos:
+                     ya sea por su popularidad entre el público, por sus grandes 
+                     ventas, por su aclamada crítica o por su importancia en el 
+                     contexto de su época. Nosotros hemos decidido recoger aquellos 
+                     que consideramos que se merecen un lugar especial en esta 
+                     recopilación.</p>
+    
+                    <p>Sabemos que los videojuegos avanzan a pasos agigantados; han recorrido un largo 
+                    camino desde los primeros juegos que vieron la luz y también ha cambiado la forma 
+                    en la que vemos a los gamers. Al principio, los que jugaban 
+                    videojuegos eran parias sociales, confinados a oscuros sótanos,
+                    húmedos repletos de trastos y equipados con un Atari 2600, 
+                    donde afilaban sus habilidades en juegos rudimentarios como 
+                    Pong, Frogger, Space Invaders o Quake. Con el paso del tiempo, 
+                    los hombres y mujeres jóvenes que habían sido excluidos de la 
+                    cultura popular fueron gradualmente aceptados en el redil.</p>
+                    <p>Los videojuegos pasaron de ser una actividad para los socialmente
+                    poco adaptados a ser la forma dominante de entretenimiento para 
+                    muchos miembros de la actual generación de adolescentes y una 
+                    nueva forma de apertura social. Ha quedado demostrado con cuánta 
+                    rapidez puede cambiar el enfoque de la cultura pop con la 
+                    llegada de un nuevo medio con posibilidades completamente 
+                    nuevas. Los videojuegos son el mejor ejemplo de ello, que 
+                    han superado incluso a la televisión</p>      
+                    <p>Hoy en día, los videojuegos son un pilar de la cultura popular moderna y las famosas marcas y personajes son omnipresentes.</p>      
+        
+                </article>
+                    
+                <aside>
+                    <img src="http://placehold.it/144x150">
+                    <img src="http://placehold.it/144x150">
+                </aside>
+            </section>
+        </section>
+         
+        <footer>
+            <div id="canva2">
+                <canvas id="fondoc" width="1010px" height="140px" >
+                    <script>
+                        var c = document.getElementById("fondoc");
+                        var ctx1 = c.getContext("2d");
+                        
+                        // Create gradient
+                        var grd = ctx1.createLinearGradient(0, 0, 1000, 0);
+                        grd.addColorStop(0, "#CCD0F0");
+                        grd.addColorStop(1, "white");
+                        
+                        // Fill with gradient
+                        ctx1.fillStyle = grd;
+                        ctx1.fillRect(0, 65, 5050, 80);
+                        </script>
+                </canvas>
+            </div>
+        </footer>
+    </body>
+</HTML>
